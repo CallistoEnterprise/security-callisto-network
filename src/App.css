@@ -1,4 +1,8 @@
-.App{
+body{
+ background-color: #090A0F;
+}
+
+.homePage, .aboutPage{
     background-image: url("/src/assets/images/bg.jpg");
     background-repeat: no-repeat;
     background-position: top center;
@@ -8,4 +12,230 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+}
+
+.appContainer{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.statsSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-bottom: 40px;
+}
+
+.statBlock{
+    background-color: rgba(31, 16, 19, 0.55);
+    padding-top: 14px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 31px;
+}
+
+.statTitle{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.listLeft li, .listCenter li, .listRight li{
+    list-style: none;
+}
+
+.listLeft ul, .listCenter ul, .listRight ul{
+    padding: 0;
+}
+
+.listLeft li:not(:last-child), 
+.listCenter li:not(:last-child), 
+.listRight li:not(:last-child){
+    margin-bottom: 16px;
+}
+
+.listOne, .listTwo, .listThree{
+    display: flex;
+    justify-content: space-between;
+}
+
+.topTitleSection{
+    display: flex;
+    margin-bottom: 23px;
+}
+
+.hrLeft, .hrRight{
+    width: 100%;
+}
+
+.hrLeft hr, .hrRight hr{
+    border: 2px solid #298C96;
+}
+
+.hrTitle{
+    width: 100%;
+    margin: 0 30px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.herosection{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 34px;
+    align-items: center;
+}
+
+.herotitle{
+    font-size: 20px;
+    padding: 18px;
+    border: solid 2px #43C861;
+    position: relative;
+}
+
+.herotitle::before{
+    content: "";
+    width: 7px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    left: -4px;
+    background-color: #43C861;
+}
+
+.herotitle::after{
+    content: "";
+    width: 7px;
+    height: 12px;
+    position: absolute;
+    top: 45px;
+    right: -4px;
+    background-color: #43C861;
+}
+
+.greenBtnLarge{
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #43C861;
+    font-size: 19px;
+    padding: 19px 40px;
+    clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
+    margin-bottom: 19px;
+}
+
+.redBtnLarge{
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #C22821;
+    font-size: 14px;
+    padding: 4px 40px;
+    clip-path: polygon(92% 0, 100% 54%, 100% 100%, 0 100%, 0 0);
+}
+
+.greenBtnLarge:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.redBtnLarge:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.dataSection th, .dataSection td{
+    color: white;
+}
+
+.dataSection thead{
+    background-color: #43C861;
+}
+
+.tableBtn{
+    text-decoration: none;
+    color: white;
+    border: solid 2px #298C96;
+    padding: 6px 18px;
+}
+
+.tableBtn:hover{
+    text-decoration: none;
+    color: white;
+} 
+
+.tableRow{
+    line-height: 62px;
+}
+
+.tableRiskLow{
+    background-color: #43C861;
+    padding: 8px 20px;
+    clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
+}
+
+.tableRow td {
+    border-color: #298C96;
+    background: rgba(31, 16, 19, 0.55) !important;
+}
+
+.tableProjIcon{
+    border-radius: 50%;
+}
+
+.tableProName img{
+    margin-right: 27px;
+}
+
+.tablePadLeft{
+    padding-left: 30px !important;
+}
+
+.footerSection{
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footerRight{
+    display: flex;
+    gap: 30px;
+}
+
+.footerLeft{
+    color: #298C96;
+}
+
+.footerRight a{
+    text-decoration: none;
+    color: white;
+}
+
+.footerRight a:hover{
+    text-decoration: none;
+    color: #298C96 ;
+}
+
+.menuSection{
+    margin-top: 36px;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuLeft{
+    display: flex;
+    gap: 40px;
+}
+
+.menuRight{
+    text-transform: uppercase;
 }
