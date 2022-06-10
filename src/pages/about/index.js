@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import menu1 from '../../assets/menu1.png';
 import menu2 from '../../assets/menu2.png';
@@ -34,9 +35,15 @@ const About = () => {
                 <div className="appContainer">
                     <div className="menuSection">
                         <div className="menuLeft">
-                            <a href="/"><img src={menu1} alt="Menu item" /></a>
-                            <a href="/"><img src={menu2} alt="Menu item" target="_blank" rel="noopener noreferrer" /></a>
-                            <a href="/"><img src={menu3} alt="Menu item" target="_blank" rel="noopener noreferrer" /></a>
+                            <Link to="/">
+                                <img src={menu1} alt="Menu item" />
+                            </Link>
+                            <Link to="/about">
+                                <img src={menu2} alt="Menu item" target="_blank" rel="noopener noreferrer" />
+                            </Link>
+                            <a href="https://github.com/EthereumCommonwealth/Auditing" target="_blank" rel="noopener noreferrer" >
+                                <img src={menu3} alt="Menu item" target="_blank" rel="noopener noreferrer" />
+                            </a>
                         </div>
                         <div className="menuRight">
                             Welcome to our portal
@@ -74,8 +81,8 @@ const About = () => {
                         </p>
                     </div>
                     <div className="heroBtns">
-                        <a href="/">Request an audit</a>
-                        <a href="/">Become an auditor</a>
+                        <a href="/" className="heroBtns_1">Request an audit</a>
+                        <a href="/" className="heroBtns_2">Become an auditor</a>
                     </div>
                     <div className="aboutQuestionBlock">
                         <div className="aQBLeft">

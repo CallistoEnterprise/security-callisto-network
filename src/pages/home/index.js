@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Papa from "papaparse";
 import TableData from "./tableData";
 
@@ -19,9 +20,15 @@ const Home = () => {
             <div className="appContainer">
             <div className="menuSection">
                 <div className="menuLeft">
-                    <a href="/"><img src={menu1} alt="Menu item" /></a>
-                    <a href="/"><img src={menu2} alt="Menu item" target="_blank" rel="noopener noreferrer" /></a>
-                    <a href="/"><img src={menu3} alt="Menu item" target="_blank" rel="noopener noreferrer" /></a>
+                    <Link to="/">
+                        <img src={menu1} alt="Menu item" />
+                    </Link>
+                    <Link to="/about">
+                        <img src={menu2} alt="Menu item" target="_blank" rel="noopener noreferrer" />
+                    </Link>
+                    <a href="https://github.com/EthereumCommonwealth/Auditing" target="_blank" rel="noopener noreferrer" >
+                        <img src={menu3} alt="Menu item" target="_blank" rel="noopener noreferrer" />
+                    </a>
                 </div>
                 <div className="menuRight">
                     Welcome to our portal
