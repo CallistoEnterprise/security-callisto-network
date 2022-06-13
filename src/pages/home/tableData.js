@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Papa from "papaparse";
 import Table from 'react-bootstrap/Table';
 
@@ -6,13 +6,17 @@ import Table from 'react-bootstrap/Table';
 
 const TabelData = () => {
   const [data, setData] = useState({});
-  Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQLD7wTy3m9LVtZBQfB4Z2i6fhsNpSd-cfXpiYolfTw7YT3M-nNgOS0cisaqc93uMEA82KD_irBsQ7h/pub?output=csv", {
-    download: true,
-    header: true,
-    complete: (results) => {
-      setData(results.data);
-    },
+
+  useEffect(() => {
+    Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQLD7wTy3m9LVtZBQfB4Z2i6fhsNpSd-cfXpiYolfTw7YT3M-nNgOS0cisaqc93uMEA82KD_irBsQ7h/pub?output=csv", {
+      download: true,
+      header: true,
+      complete: (results) => {
+        setData(results.data);
+      },
+    });
   });
+  
   const table = Array.from(data);
   return (
 

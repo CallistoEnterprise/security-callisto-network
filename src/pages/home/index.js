@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Papa from "papaparse";
 import TableData from "./tableData";
 
 import stat1 from '../../assets/stat1.png';
