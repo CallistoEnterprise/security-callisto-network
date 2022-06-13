@@ -86,6 +86,8 @@ body{
 
 .herosection{
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
     justify-content: space-around;
     margin-bottom: 34px;
     align-items: center;
@@ -450,4 +452,39 @@ body{
     font-size: 47px;
     justify-content: center;
     margin-bottom: 25px;
+}
+
+
+@media only screen and (max-width: 860px){
+    .statsSection{
+        grid-template-columns: 1fr;
+    }
+    .aboutQuestionBlock{
+        flex-wrap: wrap;
+    }
+    .featuresIcons_dot{
+        display: none;
+    }
+    .featuresIcons{
+        gap: 160px;
+    }
+    .projectsIcons{
+        flex-wrap: wrap;
+    }
+    .projectsStats{
+        flex-wrap: wrap;
+        row-gap: 35px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .menuRight{
+      display: none;
+    }
+    .menuLeft{
+        justify-content: space-around;
+    }
+    .menuSection{
+        display: block;
+    }
 }

@@ -121,13 +121,13 @@ const About = () => {
                     </div>
                     <div className="aboutFeaturesBLock">
                         <div className="featuresIcons">
-                            <img src={featuresIcons_dot} alt="" />
+                            <img src={featuresIcons_dot} alt="" className="featuresIcons_dot"/>
                             <img src={featuresIcons_1} alt="" />
-                            <img src={featuresIcons_dot} alt="" />
+                            <img src={featuresIcons_dot} alt="" className="featuresIcons_dot"/>
                             <img src={featuresIcons_2} alt="" />
-                            <img src={featuresIcons_dot} alt="" />
+                            <img src={featuresIcons_dot} alt="" className="featuresIcons_dot"/>
                             <img src={featuresIcons_3} alt="" />
-                            <img src={featuresIcons_dot} alt="" />
+                            <img src={featuresIcons_dot} alt="" className="featuresIcons_dot"/>
                         </div>
                         <div className="featuresText">
                             <p>In the first four months of 2022 alone, the value of funds stolen via smart contract hacks already exceeds the total for the year 2021. </p>
@@ -246,14 +246,16 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="appContainer">
-                <div className="footerSection">
-                    <div className="footerLeft">
-                        COPYRIGHT © 2022 Callisto Network, All Rights Reserved
-                    </div>
-                    <div className="footerRight">
-                        <a href="https://callisto.network/" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
-                        <a href="https://callisto.network/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            <div className="footer">
+                <div className="appContainer">
+                    <div className="footerSection">
+                        <div className="footerLeft">
+                            COPYRIGHT © 2022 Callisto Network, All Rights Reserved
+                        </div>
+                        <div className="footerRight">
+                            <a href="https://callisto.network/" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+                            <a href="https://callisto.network/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                        </div>
                     </div>
                 </div>
             </div>
