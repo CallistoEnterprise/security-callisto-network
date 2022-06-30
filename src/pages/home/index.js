@@ -11,6 +11,8 @@ import cloIcon from '../../assets/cloIcon.png';
 import menu1 from '../../assets/menu1.png';
 import menu2 from '../../assets/menu2.png';
 import menu3 from '../../assets/menu3.png';
+import safe from '../../assets/safe.png';
+import medium from '../../assets/medium.png';
 
 /*** Starting the Home page ***/
 const Home = () => {
@@ -32,6 +34,8 @@ const Home = () => {
     const table = Array.from(data);
     const revTable = _.reverse(table);
     console.log(revTable)
+    const audit_performed = _.size(revTable)
+
 
     return (
         <div className="homePage">
@@ -97,8 +101,8 @@ const Home = () => {
                             </div>
                             <div className="listRight">
                                 <ul>
-                                <li>400</li>
-                                <li>1484</li>
+                                <li>{audit_performed}</li>
+                                <li>1484+</li>
                                 <li>0</li>
                                 </ul>
                             </div>
@@ -119,23 +123,41 @@ const Home = () => {
                             <div className="listTwo">
                             <div className="listLeft">
                                 <ul>
-                                <li>Callisto Entreprise</li>
-                                <li>CryptoBot</li>
-                                <li>Callisto Network</li>
+                                    <li className="listLeftLiPop">
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2757.png" alt="Callisto Network" width="25px" />
+                                        <span>Callisto Network</span>
+                                    </li>
+                                    <li className="listLeftLiPop">
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/11427.png" alt="Dragonary" width="25px" />
+                                        <span>Dragonary</span>
+                                    </li>
+                                    <li className="listLeftLiPop">
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/19879.png" alt="SOY ERC223 token" width="25px" />
+                                        <span>SOY ERC223 token</span>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="listCenter">
                                 <ul>
-                                <li>94</li>
-                                <li>98</li>
-                                <li>54</li>
+                                    <li className="listLeftLiPop">
+                                        <img src={safe} alt="Safe" width="16px"/>
+                                        <span>94</span>
+                                    </li>
+                                    <li className="listLeftLiPop">
+                                        <img src={medium} alt="Medium" width="16px"/>
+                                        <span>72</span>
+                                    </li>
+                                    <li className="listLeftLiPop">
+                                        <img src={safe} alt="Safe" width="16px"/>
+                                        <span>97</span>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="listRight">
                                 <ul>
-                                <li>400</li>
-                                <li>1484</li>
-                                <li>0</li>
+                                <li>$6,759,402</li>
+                                <li>$526,099</li>
+                                <li>$1,340,740</li>
                                 </ul>
                             </div>
                             </div>
