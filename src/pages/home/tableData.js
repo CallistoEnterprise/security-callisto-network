@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Papa from "papaparse";
 import Table from 'react-bootstrap/Table';
+import _ from "lodash";
 
 // Google Sheet link: https://docs.google.com/spreadsheets/d/e/2PACX-1vQLD7wTy3m9LVtZBQfB4Z2i6fhsNpSd-cfXpiYolfTw7YT3M-nNgOS0cisaqc93uMEA82KD_irBsQ7h/pubhtml*
 
@@ -18,6 +19,7 @@ const TabelData = () => {
   });
   
   const table = Array.from(data);
+  const revTable = _.reverse(table);
   return (
 
     <div className="dataSection">
@@ -34,7 +36,7 @@ const TabelData = () => {
                         </thead>
                         <tbody>
   
-                              {table.map((data) => (
+                              {revTable.map((data) => (
                                 <tr className="tableRow">
                                   <td key={data.id} className="tablePadLeft">
                                     {data.id}
