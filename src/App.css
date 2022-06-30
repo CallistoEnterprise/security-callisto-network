@@ -177,11 +177,36 @@ body{
     line-height: 62px;
 }
 
+.tableRiskCri{
+    background-color: #680702;
+    padding: 8px 20px;
+    clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
+}
+
+.tableRiskHigh{
+    background-color: #C22821;
+    padding: 8px 20px;
+    clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
+}
+
+.tableRiskMed{
+    background-color: #EF801A;
+    padding: 8px 20px;
+    clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
+}
+
 .tableRiskLow{
     background-color: #43C861;
     padding: 8px 20px;
     clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
 }
+
+.tableRiskSafe{
+    background-color: #0b942b;
+    padding: 8px 20px;
+    clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
+}
+
 
 .tableRow td {
     border-color: #298C96;

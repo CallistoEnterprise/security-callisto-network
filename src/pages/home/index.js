@@ -36,7 +36,6 @@ const Home = () => {
     
     const audit_performed = _.size(revTable)
     const recently_completed = _.take(revTable, 3)
-    console.log(recently_completed)
 
     return (
         <div className="homePage">
@@ -228,7 +227,30 @@ const Home = () => {
                                     {data.audit_release}
                                   </td>
                                   <td>
-                                    <span className="tableRiskLow">{data.risk_level}</span>
+                                    { (data.risk_level === "Critical") ?
+                                        <span className="tableRiskCri">
+                                            CRITICAL
+                                        </span>
+                                        :
+                                            (data.risk_level === "High") ?
+                                                <span className="tableRiskHigh">
+                                                    HIGH
+                                                </span>
+                                                :
+                                                    (data.risk_level === "Medium") ?
+                                                        <span className="tableRiskMed">
+                                                            MED
+                                                        </span>
+                                                        :
+                                                            (data.risk_level === "Low") ?
+                                                                <span className="tableRiskLow">
+                                                                    LOW
+                                                                </span>
+                                                                :
+                                                                <span className="tableRiskSafe">
+                                                                    SAFE
+                                                                </span>
+                                    }
                                   </td>
                                   <td>
                                     <a href={data.report_link} className="tableBtn" target="_blank" rel="noopener noreferrer">AUDIT REPORT</a>
