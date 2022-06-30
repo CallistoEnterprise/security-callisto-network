@@ -13,6 +13,7 @@ import menu2 from '../../assets/menu2.png';
 import menu3 from '../../assets/menu3.png';
 import safe from '../../assets/safe.png';
 import medium from '../../assets/medium.png';
+import generalIcon from '../../assets/generalIcon.png';
 
 /*** Starting the Home page ***/
 const Home = () => {
@@ -218,7 +219,13 @@ const Home = () => {
                                     {data.id}
                                   </td>
                                   <td className="tableProName">
-                                    <img src={data.project_icon} alt="Project Icon" className="tableProjIcon" width="45px" /> {data.project_name}
+                                    {
+                                        (data.project_icon === "") ?
+                                            <img src={generalIcon} alt="Project Icon" className="tableProjIcon" width="45px" />
+                                        :
+                                            <img src={data.project_icon} alt="Project Icon" className="tableProjIcon" width="45px" />
+                                    }
+                                    {data.project_name}
                                   </td>
                                   <td>
                                     {data.market_cap}
