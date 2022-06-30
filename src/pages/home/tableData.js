@@ -7,6 +7,7 @@ import _ from "lodash";
 
 const TabelData = () => {
   const [data, setData] = useState({});
+  const [dataLoaded, setDataLoaded] = useState(false);
 
   useEffect(() => {
     Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQLD7wTy3m9LVtZBQfB4Z2i6fhsNpSd-cfXpiYolfTw7YT3M-nNgOS0cisaqc93uMEA82KD_irBsQ7h/pub?output=csv", {
@@ -14,12 +15,15 @@ const TabelData = () => {
       header: true,
       complete: (results) => {
         setData(results.data);
+        setDataLoaded(true);
       },
     });
-  });
+  }, [dataLoaded]);
   
   const table = Array.from(data);
   const revTable = _.reverse(table);
+  console.log(revTable)
+  
   return (
 
     <div className="dataSection">
@@ -37,8 +41,8 @@ const TabelData = () => {
                         <tbody>
   
                               {revTable.map((data) => (
-                                <tr className="tableRow">
-                                  <td key={data.id} className="tablePadLeft">
+                                <tr className="tableRow" key={data.id}>
+                                  <td className="tablePadLeft">
                                     {data.id}
                                   </td>
                                   <td className="tableProName">
