@@ -33,9 +33,10 @@ const Home = () => {
     
     const table = Array.from(data);
     const revTable = _.reverse(table);
-    console.log(revTable)
+    
     const audit_performed = _.size(revTable)
-
+    const recently_completed = _.take(revTable, 3)
+    console.log(recently_completed)
 
     return (
         <div className="homePage">
@@ -124,15 +125,15 @@ const Home = () => {
                             <div className="listLeft">
                                 <ul>
                                     <li className="listLeftLiPop">
-                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2757.png" alt="Callisto Network" width="25px" />
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2757.png" alt="Callisto Network" width="25px" className="tableProjIcon" />
                                         <span>Callisto Network</span>
                                     </li>
                                     <li className="listLeftLiPop">
-                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/11427.png" alt="Dragonary" width="25px" />
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/11427.png" alt="Dragonary" width="25px" className="tableProjIcon" />
                                         <span>Dragonary</span>
                                     </li>
                                     <li className="listLeftLiPop">
-                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/19879.png" alt="SOY ERC223 token" width="25px" />
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/19879.png" alt="SOY ERC223 token" width="25px"  className="tableProjIcon" />
                                         <span>SOY ERC223 token</span>
                                     </li>
                                 </ul>
@@ -175,20 +176,25 @@ const Home = () => {
                         </div>
                         <div className="statsList">
                             <div className="listThree">
-                            <div className="listLeft">
-                                <ul>
-                                <li>Callisto Entreprise</li>
-                                <li>CryptoBot</li>
-                                <li>Callisto Network</li>
-                                </ul>
-                            </div>
-                            <div className="listRight">
-                                <ul>
-                                <li>11/04/2022</li>
-                                <li>11/04/2022</li>
-                                <li>11/04/2022</li>
-                                </ul>
-                            </div>
+                                <div className="listLeft">
+                                    <ul>
+                                        {recently_completed.map((data) => (
+                                            <li className="listLeftLiPop" key={data.id}>
+                                                <img src={data.project_icon} alt={data.project_name} width="25px" className="tableProjIcon" />
+                                                <span>{data.project_name}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div className="listRight">
+                                    <ul>
+                                        {recently_completed.map((data) => (
+                                            <li key={data.id}>
+                                                {data.audit_release}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         </div>
