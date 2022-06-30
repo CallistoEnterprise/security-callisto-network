@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import TableData from "./tableData";
+import Papa from "papaparse";
+import Table from 'react-bootstrap/Table';
+import _ from "lodash";
 
 import stat1 from '../../assets/stat1.png';
 import stat2 from '../../assets/stat2.png';
@@ -12,6 +14,24 @@ import menu3 from '../../assets/menu3.png';
 
 /*** Starting the Home page ***/
 const Home = () => {
+
+    const [data, setData] = useState({});
+    const [dataLoaded, setDataLoaded] = useState(false);
+
+    useEffect(() => {
+        Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQLD7wTy3m9LVtZBQfB4Z2i6fhsNpSd-cfXpiYolfTw7YT3M-nNgOS0cisaqc93uMEA82KD_irBsQ7h/pub?output=csv", {
+        download: true,
+        header: true,
+        complete: (results) => {
+            setData(results.data);
+            setDataLoaded(true);
+        },
+        });
+    }, [dataLoaded]);
+    
+    const table = Array.from(data);
+    const revTable = _.reverse(table);
+    console.log(revTable)
 
     return (
         <div className="homePage">
@@ -151,7 +171,46 @@ const Home = () => {
                         </div>
                         </div>
                     </div>
-                    <TableData /> 
+                    <div className="dataSection">
+                    <Table responsive>
+                        <thead>
+                            <tr>
+                            <th className="tablePadLeft">#</th>
+                            <th>PROJECT NAME</th>
+                            <th>MARKET CAP</th>
+                            <th>AUDIT RELEASE</th>
+                            <th>RIKS LEVEL</th>
+                            <th>REPORT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+  
+                              {revTable.map((data) => (
+                                <tr className="tableRow" key={data.id}>
+                                  <td className="tablePadLeft">
+                                    {data.id}
+                                  </td>
+                                  <td className="tableProName">
+                                    <img src={data.project_icon} alt="Project Icon" className="tableProjIcon" width="45px" /> {data.project_name}
+                                  </td>
+                                  <td>
+                                    {data.market_cap}
+                                  </td>
+                                  <td>
+                                    {data.audit_release}
+                                  </td>
+                                  <td>
+                                    <span className="tableRiskLow">{data.risk_level}</span>
+                                  </td>
+                                  <td>
+                                    <a href={data.report_link} className="tableBtn" target="_blank" rel="noopener noreferrer">AUDIT REPORT</a>
+                                  </td>
+                                </tr>
+                              ))}
+                            
+                        </tbody>
+                    </Table>
+                </div>
                 </div>
             </div>
         
