@@ -16,6 +16,9 @@ import medium from '../../assets/medium.png';
 import generalIcon from '../../assets/generalIcon.png';
 import followTwitter from '../../assets/follow_twitter.png';
 import followTelegram from '../../assets/follow_telegram.png';
+import banner_desk from '../../assets/banner/1500-90.jpg';
+import banner_tablet from '../../assets/banner/728-90.jpg';
+import banner_mobile from '../../assets/banner/320-90.jpg';
 
 /*** Starting the Home page ***/
 const Home = () => {
@@ -43,6 +46,17 @@ const Home = () => {
     return (
         <div className="homePage">
             <div className="topSection">
+                <div className="banners">
+                    <div className="banner_ads banner_desk">
+                        <img src={banner_desk} alt="Banner" />
+                    </div>
+                    <div className="banner_ads banner_tablet">
+                        <img src={banner_tablet} alt="Banner" />
+                    </div>
+                    <div className="banner_ads banner_mobile">
+                        <img src={banner_mobile} alt="Banner" />
+                    </div>
+                </div>
                 <div className="appContainer">
                     <div className="menuSection">
                         <div className="menuLeft">
@@ -57,7 +71,6 @@ const Home = () => {
                             </a>
                         </div>
                         <div className="menuRight">
-                            <span>Follow US:</span>
                             <a href="https://t.me/CallistoAudits" target="_blank" rel="noopener noreferrer">
                                 <img src={followTelegram} alt="Telegram" />
                             </a>
