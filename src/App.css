@@ -485,11 +485,13 @@ body{
     align-items: center;
 }
 
-
-@media only screen and (max-width: 860px){
+@media only screen and (max-width: 1140px){
     .statsSection{
         grid-template-columns: 1fr;
     }
+}
+
+@media only screen and (max-width: 860px){
     .aboutQuestionBlock{
         flex-wrap: wrap;
     }
