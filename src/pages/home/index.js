@@ -14,6 +14,8 @@ import menu3 from '../../assets/menu3.png';
 import safe from '../../assets/safe.png';
 import medium from '../../assets/medium.png';
 import generalIcon from '../../assets/generalIcon.png';
+import followTwitter from '../../assets/follow_twitter.png';
+import followTelegram from '../../assets/follow_telegram.png';
 
 /*** Starting the Home page ***/
 const Home = () => {
@@ -55,7 +57,13 @@ const Home = () => {
                             </a>
                         </div>
                         <div className="menuRight">
-                            Welcome to our portal
+                            <span>Follow US:</span>
+                            <a href="https://t.me/CallistoAudits" target="_blank" rel="noopener noreferrer">
+                                <img src={followTelegram} alt="Telegram" />
+                            </a>
+                            <a href="https://twitter.com/Callisto_Audits" target="_blank" rel="noopener noreferrer">
+                                <img src={followTwitter} alt="Twitter" />
+                            </a>
                         </div>
                     </div>
                     <div className="topTitleSection">
