@@ -215,7 +215,7 @@ const Home = () => {
                             <th>PROJECT NAME</th>
                             <th>MARKET CAP</th>
                             <th>AUDIT RELEASE</th>
-                            <th>RIKS LEVEL</th>
+                            <th>RISK LEVEL</th>
                             <th>REPORT</th>
                             </tr>
                         </thead>
