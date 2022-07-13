@@ -503,6 +503,22 @@ body{
     display: none;
 }
 
+.tableHead{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    row-gap: 25px;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+
+.tableSeachInput{
+    padding: 5px 20px 5px 6px;
+    background: rgba(31, 16, 19, 0.55);
+    border: solid 1px #298C96;
+    color: white;
+}
 
 @media only screen and (max-width: 1140px){
     .statsSection{

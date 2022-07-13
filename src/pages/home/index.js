@@ -50,9 +50,11 @@ const Home = () => {
         let value = event.target.value.toLowerCase();
         let newData =  dataFiltered.filter(o => o.project_name.includes(value));
         
-        setDataFiltered(newData);
-        
-        console.log(newData);
+        if(value === ""){
+            setDataFiltered(dataRev);
+        } else {
+            setDataFiltered(newData);
+        }
     }
        
     const audit_performed = _.size(dataRev)
