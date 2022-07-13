@@ -24,7 +24,9 @@ import banner_mobile from '../../assets/banner/320-90.jpg';
 const Home = () => {
 
     const [data, setData] = useState({});
+    const [dataRev, setDataRev] = useState({});
     const [dataLoaded, setDataLoaded] = useState(false);
+    const [dataFiltered, setDataFiltered] = useState([]);
 
     useEffect(() => {
         Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQLD7wTy3m9LVtZBQfB4Z2i6fhsNpSd-cfXpiYolfTw7YT3M-nNgOS0cisaqc93uMEA82KD_irBsQ7h/pub?output=csv", {
@@ -35,13 +37,26 @@ const Home = () => {
             setDataLoaded(true);
         },
         });
+
+        const table = Array.from(data);
+        const revTable = _.reverse(table);
+        setDataRev(revTable);
+        setDataFiltered(revTable);
+        
     }, [dataLoaded]);
-    
-    const table = Array.from(data);
-    const revTable = _.reverse(table);
-    
-    const audit_performed = _.size(revTable)
-    const recently_completed = _.take(revTable, 3)
+
+    const handleFilter = (event) => {
+        // Reading the value from the filter input
+        let value = event.target.value.toLowerCase();
+        let newData =  dataFiltered.filter(o => o.project_name.includes(value));
+        
+        setDataFiltered(newData);
+        
+        console.log(newData);
+    }
+       
+    const audit_performed = _.size(dataRev)
+    const recently_completed = _.take(dataRev, 3)
 
     return (
         <div className="homePage">
@@ -221,6 +236,10 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="dataSection">
+                    <div className="tableHead">
+                        <h2>Audit Reports</h2>
+                        <input type="text" onChange={(event) =>handleFilter(event)} className="tableSeachInput" placeholder="Filter by keyword"/>
+                    </div>
                     <Table responsive>
                         <thead>
                             <tr>
@@ -234,7 +253,7 @@ const Home = () => {
                         </thead>
                         <tbody>
   
-                              {revTable.map((data) => (
+                              {dataFiltered.map((data) => (
                                 <tr className="tableRow" key={data.id}>
                                   <td className="tablePadLeft">
                                     {data.id}
