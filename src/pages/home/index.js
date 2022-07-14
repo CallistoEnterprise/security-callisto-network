@@ -115,8 +115,9 @@ const Home = () => {
                         Trust the Blockchain &amp; Audit Your Smart Contracts
                         </div>
                         <div className="heroButtons">
-                        <a href="https://github.com/EthereumCommonwealth/Auditing/issues/new" className='greenBtnLarge' target="_blank" rel="noopener noreferrer">Request an audit</a>
-                        <a href="https://github.com/EthereumCommonwealth/Auditing/issues/new" className='redBtnLarge' target="_blank" rel="noopener noreferrer">Report an incident</a>
+                            <a href="https://github.com/EthereumCommonwealth/Auditing/issues/new" className='greenBtnLarge' target="_blank" rel="noopener noreferrer">Request an audit</a>
+                            <a href="https://github.com/EthereumCommonwealth/Auditing/issues/new" className='blackBtnLarge' target="_blank" rel="noopener noreferrer">Become an Auditor</a>
+                            <a href="https://github.com/EthereumCommonwealth/Auditing/issues/new" className='redBtnLarge' target="_blank" rel="noopener noreferrer">Report an incident</a>
                         </div>
                     </div>
                     <div className="statsSection">

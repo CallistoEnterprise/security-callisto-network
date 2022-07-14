@@ -127,9 +127,21 @@ body{
     color: white;
     background-color: #43C861;
     font-size: 19px;
-    padding: 19px 40px;
+    padding: 12px 40px;
     clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
-    margin-bottom: 19px;
+    margin-bottom: 12px;
+}
+
+.blackBtnLarge{
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    padding: 8px 40px;
+    clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
+    margin-bottom: 12px;
 }
 
 .redBtnLarge{
@@ -144,6 +156,11 @@ body{
 }
 
 .greenBtnLarge:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.blackBtnLarge:hover{
     color: white;
     text-decoration: none;
 }
