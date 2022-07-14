@@ -64,7 +64,7 @@ const About = () => {
                         <img src={aboutTopLogo} alt="Callisto Security Department" />
                     </div>
                     <div className="aboutHeroTitle">
-                        Security Audits For Smart Contract
+                        Security Audits For Smart Contracts
                     </div>
                     <div className="aboutHeroSlogon">
                         Trust The Blockchain & Audit Your Smart Contracts
