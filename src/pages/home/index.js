@@ -127,7 +127,7 @@ const Home = () => {
                             <img src={stat1} alt="" />
                             </div>
                             <div className="statTitletxt">
-                            Security Department Metrics
+                                Public Audits Performed
                             </div>
                         </div>
                         <div className="statsList">
@@ -156,7 +156,7 @@ const Home = () => {
                             <img src={stat2} alt="" />
                             </div>
                             <div className="statTitletxt">
-                            Most Popular Audit Report
+                            Most Popular Audit Reports
                             </div>
                         </div>
                         <div className="statsList">
