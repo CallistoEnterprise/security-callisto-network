@@ -21,6 +21,19 @@ import serviceIcon_5 from '../../assets/serviceIcon_5.png';
 import projectIcon_1 from '../../assets/projects_icons/projectIcon_1.png';
 import projectIcon_2 from '../../assets/projects_icons/projectIcon_2.png';
 import projectIcon_3 from '../../assets/projects_icons/projectIcon_3.png';
+import projectIcon_4 from '../../assets/projects_icons/projectIcon_4.png';
+import projectIcon_5 from '../../assets/projects_icons/projectIcon_5.png';
+import projectIcon_6 from '../../assets/projects_icons/projectIcon_6.png';
+import projectIcon_7 from '../../assets/projects_icons/projectIcon_7.png';
+import projectIcon_8 from '../../assets/projects_icons/projectIcon_8.png';
+import projectIcon_9 from '../../assets/projects_icons/projectIcon_9.png';
+import projectIcon_10 from '../../assets/projects_icons/projectIcon_10.png';
+import projectIcon_11 from '../../assets/projects_icons/projectIcon_11.png';
+import projectIcon_12 from '../../assets/projects_icons/projectIcon_12.png';
+import projectIcon_13 from '../../assets/projects_icons/projectIcon_13.png';
+import projectIcon_14 from '../../assets/projects_icons/projectIcon_14.png';
+import projectIcon_15 from '../../assets/projects_icons/projectIcon_15.png';
+import projectIcon_16 from '../../assets/projects_icons/projectIcon_16.png';
 import psTop_1 from '../../assets/psTop_1.png';
 import psTop_2 from '../../assets/psTop_2.png';
 import psTop_3 from '../../assets/psTop_3.png';
@@ -206,15 +219,67 @@ const About = () => {
                         <div className="projectsIcons">
                             <div className="projectIcon">
                                 <img src={projectIcon_1} alt="" />
-                                <p>ETH</p>
+                                <p>Axpire (AXPR)</p>
                             </div>
                             <div className="projectIcon">
                                 <img src={projectIcon_2} alt="" />
-                                <p>TON</p>
+                                <p>Basic Attention Token (BAT)</p>
                             </div>
                             <div className="projectIcon">
                                 <img src={projectIcon_3} alt="" />
-                                <p>LUNA</p>
+                                <p>Binance Token(BNB)</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_4} alt="" />
+                                <p>Enjin (ENJ)</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_5} alt="" />
+                                <p>Holo (HOT)</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_6} alt="" />
+                                <p>IOTEX</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_7} alt="" />
+                                <p>JARVIS+ (JAR)</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_8} alt="" />
+                                <p>Kucoin Shares (KCS)</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_9} alt="" />
+                                <p>Maker (MKR)</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_10} alt="" />
+                                <p>McAFee DEX</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_11} alt="" />
+                                <p>Nexo (NEXO)</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_12} alt="" />
+                                <p>OMG Network (OMG)</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_13} alt="" />
+                                <p>Pundi X (NPXS)</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_14} alt="" />
+                                <p>Selfkey (KEY)</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_15} alt="" />
+                                <p>Tether (USDT)</p>
+                            </div>
+                            <div className="projectIcon">
+                                <img src={projectIcon_16} alt="" />
+                                <p>Zilliqa (ZIL)</p>
                             </div>
                         </div>
                         <div className="projectsStats">
