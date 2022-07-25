@@ -16,9 +16,9 @@ import medium from '../../assets/medium.png';
 import generalIcon from '../../assets/generalIcon.png';
 import followTwitter from '../../assets/follow_twitter.png';
 import followTelegram from '../../assets/follow_telegram.png';
-import banner_desk from '../../assets/banner/1500-90.jpg';
-import banner_tablet from '../../assets/banner/728-90.jpg';
-import banner_mobile from '../../assets/banner/320-90.jpg';
+import banner_desk from '../../assets/banner/1500-90.png';
+import banner_tablet from '../../assets/banner/728-90.png';
+import banner_mobile from '../../assets/banner/320-90.png';
 
 /*** Starting the Home page ***/
 const Home = () => {
