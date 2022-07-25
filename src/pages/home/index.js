@@ -83,7 +83,7 @@ const Home = () => {
                             <Link to="/about">
                                 <img src={menu2} alt="Menu item" target="_blank" rel="noopener noreferrer" />
                             </Link>
-                            <a href="https://github.com/EthereumCommonwealth/Auditing" target="_blank" rel="noopener noreferrer" >
+                            <a href="https://docs.callisto.network/callisto-security-dept./documentation" target="_blank" rel="noopener noreferrer" >
                                 <img src={menu3} alt="Menu item" target="_blank" rel="noopener noreferrer" />
                             </a>
                         </div>
@@ -142,7 +142,7 @@ const Home = () => {
                             <div className="listRight">
                                 <ul>
                                 <li>{audit_performed}</li>
-                                <li>1484+</li>
+                                <li>2484+</li>
                                 <li>0</li>
                                 </ul>
                             </div>
@@ -164,16 +164,16 @@ const Home = () => {
                             <div className="listLeft">
                                 <ul>
                                     <li className="listLeftLiPop">
-                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2757.png" alt="Callisto Network" width="25px" className="tableProjIcon" />
-                                        <span>Callisto Network</span>
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png" alt="Tether USD" width="25px" className="tableProjIcon" />
+                                        <span>Tether USD (USDT)</span>
                                     </li>
                                     <li className="listLeftLiPop">
-                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/11427.png" alt="Dragonary" width="25px" className="tableProjIcon" />
-                                        <span>Dragonary</span>
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png" alt="Soy Finance" width="25px" className="tableProjIcon" />
+                                        <span>Soy Finance (SOY)</span>
                                     </li>
                                     <li className="listLeftLiPop">
-                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/19879.png" alt="SOY ERC223 token" width="25px"  className="tableProjIcon" />
-                                        <span>SOY ERC223 token</span>
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/19879.png" alt="SHIBA INU" width="25px"  className="tableProjIcon" />
+                                        <span>SHIBA INU (SHIB)</span>
                                     </li>
                                 </ul>
                             </div>
@@ -195,9 +195,9 @@ const Home = () => {
                             </div>
                             <div className="listRight">
                                 <ul>
-                                <li>$6,759,402</li>
-                                <li>$526,099</li>
-                                <li>$1,340,740</li>
+                                <li>$65,848,116,823</li>
+                                <li>$6,169,192,014</li>
+                                <li>$1,597,553</li>
                                 </ul>
                             </div>
                             </div>

@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Papa from "papaparse";
+import _ from "lodash";
 
 import menu1 from '../../assets/menu1.png';
 import menu2 from '../../assets/menu2.png';
@@ -42,6 +44,30 @@ import psTop_3 from '../../assets/psTop_3.png';
 /*** Starting the About page ***/
 const About = () => {
 
+    const [data, setData] = useState({});
+    const [dataRev, setDataRev] = useState({});
+    const [dataLoaded, setDataLoaded] = useState(false);
+    const [dataFiltered, setDataFiltered] = useState([]);
+
+    useEffect(() => {
+        Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQLD7wTy3m9LVtZBQfB4Z2i6fhsNpSd-cfXpiYolfTw7YT3M-nNgOS0cisaqc93uMEA82KD_irBsQ7h/pub?output=csv", {
+        download: true,
+        header: true,
+        complete: (results) => {
+            setData(results.data);
+            setDataLoaded(true);
+        },
+        });
+
+        const table = Array.from(data);
+        const revTable = _.reverse(table);
+        setDataRev(revTable);
+        setDataFiltered(revTable);
+        
+    }, [dataLoaded]);
+
+    const audit_performed = _.size(dataRev)
+
     return (
         <div className="aboutPage">
             <div className="topSection">
@@ -54,7 +80,7 @@ const About = () => {
                             <Link to="/about">
                                 <img src={menu2} alt="Menu item" target="_blank" rel="noopener noreferrer" />
                             </Link>
-                            <a href="https://github.com/EthereumCommonwealth/Auditing" target="_blank" rel="noopener noreferrer" >
+                            <a href="https://docs.callisto.network/callisto-security-dept./documentation" target="_blank" rel="noopener noreferrer" >
                                 <img src={menu3} alt="Menu item" target="_blank" rel="noopener noreferrer" />
                             </a>
                         </div>
@@ -285,7 +311,7 @@ const About = () => {
                         <div className="projectsStats">
                             <div className="projectStat">
                                 <div className="psTop">
-                                    <img src={psTop_1} alt="" /> 352
+                                    <img src={psTop_1} alt="" /> {audit_performed}
                                 </div>
                                 <div className="psBottom">
                                     Smart contracts audits
@@ -293,7 +319,7 @@ const About = () => {
                             </div>
                             <div className="projectStat">
                                 <div className="psTop">
-                                    <img src={psTop_2} alt="" /> 1020
+                                    <img src={psTop_2} alt="" /> 2484+
                                 </div>
                                 <div className="psBottom">
                                     Vulnerabilities found
