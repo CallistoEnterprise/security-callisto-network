@@ -120,8 +120,8 @@ const About = () => {
                         </p>
                     </div>
                     <div className="heroBtns">
-                        <a href="/" className="heroBtns_1">Request an audit</a>
-                        <a href="/" className="heroBtns_2">Become an auditor</a>
+                        <a href="https://github.com/EthereumCommonwealth/Auditing/issues/new" className="heroBtns_1">Request an audit</a>
+                        <a href="https://github.com/EthereumCommonwealth/Proposals/issues/2/" className="heroBtns_2">Become an auditor</a>
                     </div>
                     <div className="aboutQuestionBlock">
                         <div className="aQBLeft">
