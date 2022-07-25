@@ -181,15 +181,15 @@ const Home = () => {
                                 <ul>
                                     <li className="listLeftLiPop">
                                         <img src={safe} alt="Safe" width="16px"/>
-                                        <span>94</span>
-                                    </li>
-                                    <li className="listLeftLiPop">
-                                        <img src={medium} alt="Medium" width="16px"/>
-                                        <span>72</span>
+                                        <span>LOW</span>
                                     </li>
                                     <li className="listLeftLiPop">
                                         <img src={safe} alt="Safe" width="16px"/>
-                                        <span>97</span>
+                                        <span>LOW</span>
+                                    </li>
+                                    <li className="listLeftLiPop">
+                                        <img src={safe} alt="Safe" width="16px"/>
+                                        <span>LOW</span>
                                     </li>
                                 </ul>
                             </div>
