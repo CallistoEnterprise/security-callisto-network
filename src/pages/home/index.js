@@ -48,12 +48,17 @@ const Home = () => {
     const handleFilter = (event) => {
         // Reading the value from the filter input
         let value = event.target.value.toLowerCase();
-        let newData =  dataFiltered.filter(o => o.project_name.includes(value));
+        console.log("Value input")
+        console.log(value)
+
+        let newData =  dataRev.filter(o => o.project_name.toLowerCase().includes(value));
         
         if(value === ""){
             setDataFiltered(dataRev);
         } else {
             setDataFiltered(newData);
+            console.log("Filtered Data")
+            console.log(newData)
         }
     }
        
