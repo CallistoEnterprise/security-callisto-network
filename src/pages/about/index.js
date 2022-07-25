@@ -39,6 +39,8 @@ import projectIcon_16 from '../../assets/projects_icons/projectIcon_16.png';
 import psTop_1 from '../../assets/psTop_1.png';
 import psTop_2 from '../../assets/psTop_2.png';
 import psTop_3 from '../../assets/psTop_3.png';
+import followTwitter from '../../assets/follow_twitter.png';
+import followTelegram from '../../assets/follow_telegram.png';
 
 
 /*** Starting the About page ***/
@@ -85,7 +87,12 @@ const About = () => {
                             </a>
                         </div>
                         <div className="menuRight">
-                            Welcome to our portal
+                            <a href="https://t.me/CallistoNet" target="_blank" rel="noopener noreferrer">
+                                <img src={followTelegram} alt="Telegram" />
+                            </a>
+                            <a href="https://twitter.com/Callisto_Audits" target="_blank" rel="noopener noreferrer">
+                                <img src={followTwitter} alt="Twitter" />
+                            </a>
                         </div>
                     </div>
                     <div className="topTitleSection">

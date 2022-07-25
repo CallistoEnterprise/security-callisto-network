@@ -93,7 +93,7 @@ const Home = () => {
                             </a>
                         </div>
                         <div className="menuRight">
-                            <a href="https://t.me/CallistoAudits" target="_blank" rel="noopener noreferrer">
+                            <a href="https://t.me/CallistoNet" target="_blank" rel="noopener noreferrer">
                                 <img src={followTelegram} alt="Telegram" />
                             </a>
                             <a href="https://twitter.com/Callisto_Audits" target="_blank" rel="noopener noreferrer">
