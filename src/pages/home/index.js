@@ -201,8 +201,8 @@ const Home = () => {
                             <div className="listRight">
                                 <ul>
                                 <li>$65,848,116,823</li>
-                                <li>$6,169,192,014</li>
                                 <li>$1,597,553</li>
+                                <li>$6,169,192,014</li>
                                 </ul>
                             </div>
                             </div>
