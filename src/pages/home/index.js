@@ -173,11 +173,11 @@ const Home = () => {
                                         <span>Tether USD (USDT)</span>
                                     </li>
                                     <li className="listLeftLiPop">
-                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png" alt="Soy Finance" width="25px" className="tableProjIcon" />
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/19879.png" alt="Soy Finance" width="25px" className="tableProjIcon" />
                                         <span>Soy Finance (SOY)</span>
                                     </li>
                                     <li className="listLeftLiPop">
-                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/19879.png" alt="SHIBA INU" width="25px"  className="tableProjIcon" />
+                                        <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5994.png" alt="SHIBA INU" width="25px"  className="tableProjIcon" />
                                         <span>SHIBA INU (SHIB)</span>
                                     </li>
                                 </ul>
