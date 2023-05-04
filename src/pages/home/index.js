@@ -68,17 +68,6 @@ const Home = () => {
     return (
         <div className="homePage">
             <div className="topSection">
-                <div className="banners">
-                    <div className="banner_ads banner_desk">
-                        <img src={banner_desk} alt="Banner" />
-                    </div>
-                    <div className="banner_ads banner_tablet">
-                        <img src={banner_tablet} alt="Banner" />
-                    </div>
-                    <div className="banner_ads banner_mobile">
-                        <img src={banner_mobile} alt="Banner" />
-                    </div>
-                </div>
                 <div className="appContainer">
                     <div className="menuSection">
                         <div className="menuLeft">
@@ -96,7 +85,7 @@ const Home = () => {
                             <a href="https://t.me/CallistoNet" target="_blank" rel="noopener noreferrer">
                                 <img src={followTelegram} alt="Telegram" />
                             </a>
-                            <a href="https://twitter.com/Callisto_Audits" target="_blank" rel="noopener noreferrer">
+                            <a href="https://twitter.com/CallistoAudits" target="_blank" rel="noopener noreferrer">
                                 <img src={followTwitter} alt="Twitter" />
                             </a>
                         </div>
@@ -256,7 +245,7 @@ const Home = () => {
                             <th>MARKET CAP</th>
                             <th>AUDIT RELEASE</th>
                             <th>RISK LEVEL</th>
-                            <th>REPORT</th>
+                            <th>SECURITY REPORTS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -308,7 +297,7 @@ const Home = () => {
                                     }
                                   </td>
                                   <td>
-                                    <a href={data.report_link} className="tableBtn" target="_blank" rel="noopener noreferrer">AUDIT REPORT</a>
+                                    <a href={data.report_link} className="tableBtn" target="_blank" rel="noopener noreferrer">View Report</a>
                                   </td>
                                 </tr>
                               ))}
@@ -324,11 +313,7 @@ const Home = () => {
                 <div className="appContainer">
                     <div className="footerSection">
                         <div className="footerLeft">
-                            COPYRIGHT © 2022 Callisto Network, All Rights Reserved
-                        </div>
-                        <div className="footerRight">
-                            <a href="https://callisto.network/" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
-                            <a href="https://callisto.network/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                            COPYRIGHT © 2023 Callisto Network, All Rights Reserved
                         </div>
                     </div>
                 </div>
