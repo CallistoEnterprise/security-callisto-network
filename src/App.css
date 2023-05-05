@@ -96,7 +96,7 @@ body{
 }
 
 .herotitle{
-    font-size: 20px;
+    font-size: 23px;
     padding: 18px;
     border: solid 2px #43C861;
     position: relative;
@@ -132,6 +132,7 @@ body{
     padding: 12px 40px;
     clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
     margin-bottom: 12px;
+    font-weight: 500;
 }
 
 .blackBtnLarge{
@@ -144,6 +145,7 @@ body{
     padding: 8px 40px;
     clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
     margin-bottom: 12px;
+    font-weight: 500;
 }
 
 .redBtnLarge{
@@ -154,6 +156,7 @@ body{
     background-color: #C22821;
     font-size: 14px;
     padding: 4px 40px;
+    font-weight: 500;
     clip-path: polygon(92% 0, 100% 54%, 100% 100%, 0 100%, 0 0);
 }
 
@@ -174,6 +177,7 @@ body{
 
 .dataSection th, .dataSection td{
     color: white;
+    text-align: center;
 }
 
 .dataSection thead{
@@ -542,6 +546,7 @@ body{
 
 .statTitletxt{
     font-weight: 500;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 1140px){
