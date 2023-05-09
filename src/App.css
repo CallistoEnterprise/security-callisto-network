@@ -352,6 +352,7 @@ body{
     color: white;
     background-color: #43C861;
     font-size: 18px;
+    font-weight: 500;
     padding: 10px 34px;
     clip-path: polygon(08% 0, 100% 0, 100% 100%, 0 100%, 0 46%);
 }
