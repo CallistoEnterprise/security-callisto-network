@@ -102,6 +102,15 @@ body{
     position: relative;
 }
 
+.herotitleAbout{
+    font-size: 23px;
+    padding: 18px;
+    border: solid 2px #43C861;
+    position: relative;
+    max-width: 580px;
+    margin: 30px auto;
+}
+
 .herotitle::before{
     content: "";
     width: 7px;
