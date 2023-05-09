@@ -107,11 +107,12 @@ body{
     padding: 18px;
     border: solid 2px #43C861;
     position: relative;
-    max-width: 580px;
+    max-width: fit-content;
     margin: 30px auto;
 }
 
-.herotitle::before{
+.herotitle::before,
+.herotitleAbout::before{
     content: "";
     width: 7px;
     height: 12px;
@@ -121,7 +122,8 @@ body{
     background-color: #43C861;
 }
 
-.herotitle::after{
+.herotitle::after,
+.herotitleAbout::after{
     content: "";
     width: 7px;
     height: 12px;
@@ -342,6 +344,7 @@ body{
     color: white;
     background-color: #43C861;
     font-size: 18px;
+    font-weight: 500;
     padding: 10px 34px;
     clip-path: polygon(92% 0, 100% 54%, 100% 100%, 0 100%, 0 0);
 }
@@ -370,6 +373,22 @@ body{
     align-items: center;
     row-gap: 30px;
     column-gap: 80px;
+}
+
+.projectIcon{
+    width: 400px;
+    text-align: center;
+}
+
+.projectIcon img{
+    width: 160px;
+}
+
+.hero2ndTitle{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 24px;
 }
 
 .aQBLeft{
