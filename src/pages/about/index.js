@@ -379,7 +379,11 @@ const About = () => {
                 <p>Zilliqa (ZIL)</p>
               </div>
             </div>
+            <div className="projectsTitle">
+              Security Department Metrics
+              </div>
             <div className="projectsStats">
+              
               <div className="projectStat">
                 <div className="psTop">
                   <img src={psTop_1} alt="" /> {audit_performed}
