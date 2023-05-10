@@ -140,13 +140,25 @@ const About = () => {
           </div>
           <div className="aboutHeroP">
             <p>
-            There are dangers associated with smart contract technology. With millions of DApps deployed on dozens of blockchains, some people intentionally engage in harmful activities to the community. These malicious activities are only possible when vulnerabilities exist in the smart contract code. Most hacking incidents are due to the lack of proper auditing of smart contracts.
+              There are dangers associated with smart contract technology. With
+              millions of DApps deployed on dozens of blockchains, some people
+              intentionally engage in harmful activities to the community. These
+              malicious activities are only possible when vulnerabilities exist
+              in the smart contract code. Most hacking incidents are due to the
+              lack of proper auditing of smart contracts.
             </p>
             <p>
-            DeFi platforms are a prime hunting ground for cryptocurrency thieves and hackers as the cryptocurrency hacks accelerate. During the first four months of 2022, $1.57 billion worth of cryptocurrencies were stolen, surpassing the previous year's value.
+              DeFi platforms are a prime hunting ground for cryptocurrency
+              thieves and hackers as the cryptocurrency hacks accelerate. During
+              the first four months of 2022, $1.57 billion worth of
+              cryptocurrencies were stolen, surpassing the previous year's
+              value.
             </p>
             <p>
-            Protecting users' and investors' funds is more crucial than ever, and Callisto Network Security Department offers its experience in providing the most efficient and affordable auditing service in the industry.
+              Protecting users' and investors' funds is more crucial than ever,
+              and Callisto Network Security Department offers its experience in
+              providing the most efficient and affordable auditing service in
+              the industry.
             </p>
           </div>
           <div className="heroBtns">
@@ -174,7 +186,11 @@ const About = () => {
             <div className="aQBRight">
               <div className="aQBText">
                 <p>
-                The term "smart contract" refers to a software code or protocol used to provide assistance in negotiating, verifying, and executing an agreement. Smart contracts are fully programmable and can be automatically triggered, allowing for reliable transactions without any external third party.
+                  The term "smart contract" refers to a software code or
+                  protocol used to provide assistance in negotiating, verifying,
+                  and executing an agreement. Smart contracts are fully
+                  programmable and can be automatically triggered, allowing for
+                  reliable transactions without any external third party.
                 </p>
               </div>
             </div>
@@ -190,13 +206,21 @@ const About = () => {
             <div className="aQBRight">
               <div className="aQBText">
                 <p>
-                  Smart contract programming is a relatively new field, lacking security standards, documentation, and best practices. Consequently, developers may overlook the importance of auditing their smart contracts before launch.
+                  Smart contract programming is a relatively new field, lacking
+                  security standards, documentation, and best practices.
+                  Consequently, developers may overlook the importance of
+                  auditing their smart contracts before launch.
                 </p>
                 <p>
-                  In this context, smart contract hacks are on the rise, and with the advent of DeFi platforms in the 2020s, the number of hacks has skyrocketed as some bad actors take advantage of developers' negligence.
+                  In this context, smart contract hacks are on the rise, and
+                  with the advent of DeFi platforms in the 2020s, the number of
+                  hacks has skyrocketed as some bad actors take advantage of
+                  developers' negligence.
                 </p>
                 <p>
-                An error in the code order (as in the DAO hack) or an initialization omission (as in the Parity Freeze) can lead to a disaster that will be immortalized on the blockchain.
+                  An error in the code order (as in the DAO hack) or an
+                  initialization omission (as in the Parity Freeze) can lead to
+                  a disaster that will be immortalized on the blockchain.
                 </p>
               </div>
             </div>
@@ -229,13 +253,18 @@ const About = () => {
             </div>
             <div className="featuresText">
               <p>
-              In the first four months of 2022 alone, the value of funds stolen via smart contract hacks already exceeds the total for the year 2021.{" "}
+                In the first four months of 2022 alone, the value of funds
+                stolen via smart contract hacks already exceeds the total for
+                the year 2021.{" "}
               </p>
               <p>
-              Despite the widely prevalent belief, a smart contract is not secure by nature. As a piece of code, it is as prone to bugs and flaws as any program.
+                Despite the widely prevalent belief, a smart contract is not
+                secure by nature. As a piece of code, it is as prone to bugs and
+                flaws as any program.
               </p>
               <p>
-              Any contract intended to receive funds should be audited before deployment.
+                Any contract intended to receive funds should be audited before
+                deployment.
               </p>
             </div>
           </div>
@@ -248,16 +277,32 @@ const About = () => {
             </div>
             <div className="infoP">
               <p>
-              The idea for Callisto Security Department emerged after the DAO hack, which led to the Ethereum fork. The DAO hack resulted in the loss of millions of dollars and resulted in the creation of Ethereum Classic. Being an active contributor to Ethereum, Dexaran, founder of the Callisto Security Department, followed the hack closely and saw the deficiencies that led to the most famous hack in cryptocurrency history.
+                The idea for Callisto Security Department emerged after the DAO
+                hack, which led to the Ethereum fork. The DAO hack resulted in
+                the loss of millions of dollars and resulted in the creation of
+                Ethereum Classic. Being an active contributor to Ethereum,
+                Dexaran, founder of the Callisto Security Department, followed
+                the hack closely and saw the deficiencies that led to the most
+                famous hack in cryptocurrency history.
               </p>
               <p>
-              Callisto Security Department consists of a team of seasoned professionals with a common goal: to reduce the risks and vulnerabilities of smart contracts to drive the adoption of programmable blockchains.
+                Callisto Security Department consists of a team of seasoned
+                professionals with a common goal: to reduce the risks and
+                vulnerabilities of smart contracts to drive the adoption of
+                programmable blockchains.
               </p>
               <p>
-              As part of the audit process, auditors ensure that the smart contract behaves as intended by considering all logical permutations and possible exceptions and the rigor of its implementation. Our audit process primarily relies on manual review and analysis, as we believe that solely relying on automated tools for formal verification cannot provide sufficient security for critical systems and DApps.
+                As part of the audit process, auditors ensure that the smart
+                contract behaves as intended by considering all logical
+                permutations and possible exceptions and the rigor of its
+                implementation. Our audit process primarily relies on manual
+                review and analysis, as we believe that solely relying on
+                automated tools for formal verification cannot provide
+                sufficient security for critical systems and DApps.
               </p>
               <p>
-              An audit is a fundamental requirement for a project to be considered secure and ready to receive user funds.
+                An audit is a fundamental requirement for a project to be
+                considered secure and ready to receive user funds.
               </p>
             </div>
           </div>
@@ -272,7 +317,8 @@ const About = () => {
                   <img src={serviceIcon_1} alt="" />
                 </div>
                 <div className="ServiceText">
-                Multiple independent auditors guarantee a reliable, transparent, and decentralized audit service.
+                  Multiple independent auditors guarantee a reliable,
+                  transparent, and decentralized audit service.
                 </div>
               </div>
               <div className="ServiceBlock">
@@ -280,7 +326,8 @@ const About = () => {
                   <img src={serviceIcon_2} alt="" />
                 </div>
                 <div className="ServiceText">
-                Identification of potential bugs in the smart contract code and labeling them based on the severity classification.
+                  Identification of potential bugs in the smart contract code
+                  and labeling them based on the severity classification.
                 </div>
               </div>
               <div className="ServiceBlock">
@@ -288,7 +335,7 @@ const About = () => {
                   <img src={serviceIcon_3} alt="" />
                 </div>
                 <div className="ServiceText">
-                Analysis of the overall architecture of the smart contracts.
+                  Analysis of the overall architecture of the smart contracts.
                 </div>
               </div>
               <div className="ServiceBlock">
@@ -296,7 +343,8 @@ const About = () => {
                   <img src={serviceIcon_4} alt="" />
                 </div>
                 <div className="ServiceText">
-                Technical analysis of the interaction between the smart contract and the blockchain.
+                  Technical analysis of the interaction between the smart
+                  contract and the blockchain.
                 </div>
               </div>
               <div className="ServiceBlock">
@@ -304,86 +352,111 @@ const About = () => {
                   <img src={serviceIcon_5} alt="" />
                 </div>
                 <div className="ServiceText">
-                Research possible optimizations of the smart contract code.
+                  Research possible optimizations of the smart contract code.
                 </div>
               </div>
             </div>
           </div>
           <div className="projectsSection">
             <div className="projectsTitle">
-              They Have Been Audited By Callisto
+              They Have Been Audited By Callisto Network
             </div>
             <div className="projectsIcons">
+              <a href="https://callisto.network/axpire-token-axpr-security-audit/">
               <div className="projectIcon">
                 <img src={projectIcon_1} alt="" />
                 <p>Axpire (AXPR)</p>
               </div>
+              </a>
+              <a href="https://callisto.network/basic-attention-token-bat-security-audit/">
               <div className="projectIcon">
                 <img src={projectIcon_2} alt="" />
                 <p>Basic Attention Token (BAT)</p>
               </div>
+              </a>
+              <a href="https://callisto.network/binance-token-bnb-security-audit/">
               <div className="projectIcon">
                 <img src={projectIcon_3} alt="" />
-                <p>Binance Token(BNB)</p>
+                <p>Binance Token (BNB)</p>
               </div>
+              </a>
+              <a href="https://callisto.network/enjin-token-enj-security-audit/">
               <div className="projectIcon">
                 <img src={projectIcon_4} alt="" />
                 <p>Enjin (ENJ)</p>
               </div>
+              </a>
+              <a href="https://callisto.network/holo-token-hot-security-audit/">
               <div className="projectIcon">
                 <img src={projectIcon_5} alt="" />
                 <p>Holo (HOT)</p>
               </div>
+              </a>
               <div className="projectIcon">
                 <img src={projectIcon_6} alt="" />
-                <p>IOTEX</p>
+                <p>IoTeX (IOTX)</p>
               </div>
+              <a href="https://callisto.network/jarvis-token-jar-security-audit/">
               <div className="projectIcon">
                 <img src={projectIcon_7} alt="" />
                 <p>JARVIS+ (JAR)</p>
               </div>
+              </a>
               <div className="projectIcon">
                 <img src={projectIcon_8} alt="" />
                 <p>Kucoin Shares (KCS)</p>
               </div>
+              <a href="https://callisto.network/maker-token-mkr-security-audit/">
               <div className="projectIcon">
                 <img src={projectIcon_9} alt="" />
                 <p>Maker (MKR)</p>
               </div>
+              </a>
+              <a href="https://callisto.network/mcafeedex-security-audit/">
               <div className="projectIcon">
                 <img src={projectIcon_10} alt="" />
                 <p>McAFee DEX</p>
               </div>
+              </a>
+              <a href="https://callisto.network/nexo-token-nexo-security-audit/">
               <div className="projectIcon">
                 <img src={projectIcon_11} alt="" />
                 <p>Nexo (NEXO)</p>
               </div>
+              </a>
+              <a href="https://callisto.network/omisego-token-omg-security-audit/">
               <div className="projectIcon">
                 <img src={projectIcon_12} alt="" />
                 <p>OMG Network (OMG)</p>
               </div>
-              <div className="projectIcon">
-                <img src={projectIcon_13} alt="" />
-                <p>Pundi X (NPXS)</p>
-              </div>
-              <div className="projectIcon">
-                <img src={projectIcon_14} alt="" />
-                <p>Selfkey (KEY)</p>
-              </div>
-              <div className="projectIcon">
-                <img src={projectIcon_15} alt="" />
-                <p>Tether (USDT)</p>
-              </div>
-              <div className="projectIcon">
-                <img src={projectIcon_16} alt="" />
-                <p>Zilliqa (ZIL)</p>
-              </div>
+              </a>
+              <a href="https://callisto.network/pundix-token-npxs-security-audit/">
+                <div className="projectIcon">
+                  <img src={projectIcon_13} alt="" />
+                  <p>Pundi X (NPXS)</p>
+                </div>
+              </a>
+              <a href="https://callisto.network/selfkey-token-key-security-audit/">
+                <div className="projectIcon">
+                  <img src={projectIcon_14} alt="" />
+                  <p>Selfkey (KEY)</p>
+                </div>
+              </a>
+              <a href="https://callisto.network/tether-token-usdt-security/">
+                <div className="projectIcon">
+                  <img src={projectIcon_15} alt="" />
+                  <p>Tether (USDT)</p>
+                </div>
+              </a>
+              <a href="https://callisto.network/zilliqa-token-zil-security-audit/">
+                <div className="projectIcon">
+                  <img src={projectIcon_16} alt="" />
+                  <p>Zilliqa (ZIL)</p>
+                </div>
+              </a>
             </div>
-            <div className="projectsTitle">
-              Security Department Metrics
-              </div>
+            <div className="projectsTitle">Security Department Metrics</div>
             <div className="projectsStats">
-              
               <div className="projectStat">
                 <div className="psTop">
                   <img src={psTop_1} alt="" /> {audit_performed}
@@ -414,7 +487,6 @@ const About = () => {
             <div className="footerLeft">
               COPYRIGHT © 2022 Callisto Network, All Rights Reserved
             </div>
-            
           </div>
         </div>
       </div>
