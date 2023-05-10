@@ -164,7 +164,7 @@ const Home = () => {
                 <div className="statIcon">
                   <img src={stat1} alt="" />
                 </div>
-                <div className="statTitletxt">Public Audits Performed</div>
+                <div className="statTitletxt">Security Department Metrics</div>
               </div>
               <div className="statsList">
                 <div className="listOne">
@@ -172,7 +172,7 @@ const Home = () => {
                     <ul>
                       <li>Audit Performed</li>
                       <li>Vulnerabilities Found</li>
-                      <li>Smart Contract hacked after audit</li>
+                      <li>Smart Contract Hacked After Audit</li>
                     </ul>
                   </div>
                   <div className="listRight">
