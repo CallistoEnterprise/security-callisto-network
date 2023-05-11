@@ -25,9 +25,9 @@ import projectIcon_2 from "../../assets/projects_icons/projectIcon_2.png";
 import projectIcon_3 from "../../assets/projects_icons/projectIcon_3.png";
 import projectIcon_4 from "../../assets/projects_icons/projectIcon_4.png";
 import projectIcon_5 from "../../assets/projects_icons/projectIcon_5.png";
-import projectIcon_6 from "../../assets/projects_icons/projectIcon_6.png";
+import projectIcon_6 from "../../assets/projects_icons/projectIcon_6.svg";
 import projectIcon_7 from "../../assets/projects_icons/projectIcon_7.png";
-import projectIcon_8 from "../../assets/projects_icons/projectIcon_8.png";
+import projectIcon_8 from "../../assets/projects_icons/projectIcon_8.svg";
 import projectIcon_9 from "../../assets/projects_icons/projectIcon_9.png";
 import projectIcon_10 from "../../assets/projects_icons/projectIcon_10.png";
 import projectIcon_11 from "../../assets/projects_icons/projectIcon_11.png";
@@ -363,72 +363,76 @@ const About = () => {
             </div>
             <div className="projectsIcons">
               <a href="https://callisto.network/axpire-token-axpr-security-audit/">
-              <div className="projectIcon">
-                <img src={projectIcon_1} alt="" />
-                <p>Axpire (AXPR)</p>
-              </div>
+                <div className="projectIcon">
+                  <img src={projectIcon_1} alt="" />
+                  <p>Axpire (AXPR)</p>
+                </div>
               </a>
               <a href="https://callisto.network/basic-attention-token-bat-security-audit/">
-              <div className="projectIcon">
-                <img src={projectIcon_2} alt="" />
-                <p>Basic Attention Token (BAT)</p>
-              </div>
+                <div className="projectIcon">
+                  <img src={projectIcon_2} alt="" />
+                  <p>Basic Attention Token (BAT)</p>
+                </div>
               </a>
               <a href="https://callisto.network/binance-token-bnb-security-audit/">
-              <div className="projectIcon">
-                <img src={projectIcon_3} alt="" />
-                <p>Binance Token (BNB)</p>
-              </div>
+                <div className="projectIcon">
+                  <img src={projectIcon_3} alt="" />
+                  <p>Binance Token (BNB)</p>
+                </div>
               </a>
               <a href="https://callisto.network/enjin-token-enj-security-audit/">
-              <div className="projectIcon">
-                <img src={projectIcon_4} alt="" />
-                <p>Enjin (ENJ)</p>
-              </div>
+                <div className="projectIcon">
+                  <img src={projectIcon_4} alt="" />
+                  <p>Enjin (ENJ)</p>
+                </div>
               </a>
               <a href="https://callisto.network/holo-token-hot-security-audit/">
-              <div className="projectIcon">
-                <img src={projectIcon_5} alt="" />
-                <p>Holo (HOT)</p>
-              </div>
+                <div className="projectIcon">
+                  <img src={projectIcon_5} alt="" />
+                  <p>Holo (HOT)</p>
+                </div>
               </a>
+              <a href="https://callisto.network/usdc-token-security-audit-report/">
               <div className="projectIcon">
                 <img src={projectIcon_6} alt="" />
-                <p>IoTeX (IOTX)</p>
-              </div>
-              <a href="https://callisto.network/jarvis-token-jar-security-audit/">
-              <div className="projectIcon">
-                <img src={projectIcon_7} alt="" />
-                <p>JARVIS+ (JAR)</p>
+                <p>USDC (USDC)</p>
               </div>
               </a>
+              <a href="https://callisto.network/jarvis-token-jar-security-audit/">
+                <div className="projectIcon">
+                  <img src={projectIcon_7} alt="" />
+                  <p>JARVIS+ (JAR)</p>
+                </div>
+              </a>
+              <a href="https://callisto.network/shiba-inu-token-security-audit-report/">
               <div className="projectIcon">
                 <img src={projectIcon_8} alt="" />
-                <p>Kucoin Shares (KCS)</p>
+                <p>Shiba Inu (SHIB)</p>
               </div>
+              </a>
               <a href="https://callisto.network/maker-token-mkr-security-audit/">
-              <div className="projectIcon">
-                <img src={projectIcon_9} alt="" />
-                <p>Maker (MKR)</p>
-              </div>
+                <div className="projectIcon">
+                  <img src={projectIcon_9} alt="" />
+                  <p>Maker (MKR)</p>
+                </div>
               </a>
               <a href="https://callisto.network/mcafeedex-security-audit/">
-              <div className="projectIcon">
-                <img src={projectIcon_10} alt="" />
-                <p>McAFee DEX</p>
-              </div>
+                <div className="projectIcon">
+                  <img src={projectIcon_10} alt="" />
+                  <p>McAFee DEX</p>
+                </div>
               </a>
               <a href="https://callisto.network/nexo-token-nexo-security-audit/">
-              <div className="projectIcon">
-                <img src={projectIcon_11} alt="" />
-                <p>Nexo (NEXO)</p>
-              </div>
+                <div className="projectIcon">
+                  <img src={projectIcon_11} alt="" />
+                  <p>Nexo (NEXO)</p>
+                </div>
               </a>
               <a href="https://callisto.network/omisego-token-omg-security-audit/">
-              <div className="projectIcon">
-                <img src={projectIcon_12} alt="" />
-                <p>OMG Network (OMG)</p>
-              </div>
+                <div className="projectIcon">
+                  <img src={projectIcon_12} alt="" />
+                  <p>OMG Network (OMG)</p>
+                </div>
               </a>
               <a href="https://callisto.network/pundix-token-npxs-security-audit/">
                 <div className="projectIcon">
@@ -455,7 +459,9 @@ const About = () => {
                 </div>
               </a>
             </div>
-            <div className="projectsTitle">Callisto Network: Proven Audit Expertise</div>
+            <div className="projectsTitle">
+              Callisto Network: Proven Audit Expertise
+            </div>
             <div className="projectsStats">
               <div className="projectStat">
                 <div className="psTop">
