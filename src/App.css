@@ -410,6 +410,10 @@ body{
     align-items: center;
 }
 
+.youtubeVideo{
+    margin-bottom: 160px;
+}
+
 .aQBBar{
     width: 3px;
     height: 73px;

@@ -269,8 +269,16 @@ const About = () => {
             </div>
           </div>
           <div className="infoSection">
-            <div className="infoIcon">
-              <img src={infoIcon} alt="" />
+            <div className="youtubeVideo">
+              <iframe
+                width="100%"
+                height="600px"
+                src="https://www.youtube.com/embed/yYsV3YlU9hk?autoplay=0&mute=1&loop=1"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
             <div className="infoTitle">
               Callisto Network Security Departement
