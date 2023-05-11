@@ -9,7 +9,7 @@ import stat2 from "../../assets/stat2.png";
 import stat3 from "../../assets/stat3.png";
 import cloIcon from "../../assets/cloIcon.png";
 import menu1 from "../../assets/menu1.png";
-import menu2 from "../../assets/menu2.png";
+import menu2 from "../../assets/menu2_actif.png";
 import menu3 from "../../assets/menu3.png";
 import safe from "../../assets/safe.png";
 import medium from "../../assets/medium.png";

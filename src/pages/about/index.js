@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Papa from "papaparse";
 import _ from "lodash";
 
-import menu1 from "../../assets/menu1.png";
+import menu1 from "../../assets/menu1-actif.png";
 import menu2 from "../../assets/menu2.png";
 import menu3 from "../../assets/menu3.png";
 import aboutTopLogo from "../../assets/aboutTopLogo.png";
