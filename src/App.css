@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 body{
     background-color: #090A0F;
     font-size: 20px;
     line-height: 32px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .homePage, .aboutPage{
@@ -17,7 +20,7 @@ body{
 }
 
 .appContainer{
-    max-width: 1600px;
+    max-width: 1642px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -80,9 +83,9 @@ body{
 .hrTitle{
     width: 100%;
     margin: 0 30px;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 31px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -287,7 +290,7 @@ body{
 
 .menuSection{
     margin-top: 36px;
-    margin-bottom: 17px;
+    margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
 }
@@ -306,8 +309,8 @@ body{
 
 .aboutTopLogo{
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin-top: 90px;
+    margin-bottom: 70px;
 }
 
 .aboutHeroTitle{
