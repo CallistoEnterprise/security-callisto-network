@@ -280,7 +280,7 @@ const About = () => {
                 allowFullScreen
               ></iframe>
             </div>
-            <div className="infoTitle">
+            <div className="infoTitle2nd">
               Callisto Network Security Departement
             </div>
             <div className="infoP">
@@ -497,6 +497,9 @@ const About = () => {
       </div>
       <div className="footer">
         <div className="appContainer">
+          <div className="hr">
+            <hr />
+          </div>
           <div className="footerSection">
             <div className="footerLeft">
               COPYRIGHT © 2022 Callisto Network, All Rights Reserved
