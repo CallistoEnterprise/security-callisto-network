@@ -252,20 +252,35 @@ const About = () => {
               />
             </div>
             <div className="featuresText">
-              <p>
-                In the first four months of 2022 alone, the value of funds
-                stolen via smart contract hacks already exceeds the total for
-                the year 2021.{" "}
-              </p>
-              <p>
-                Despite the widely prevalent belief, a smart contract is not
-                secure by nature. As a piece of code, it is as prone to bugs and
-                flaws as any program.
-              </p>
-              <p>
-                Any contract intended to receive funds should be audited before
-                deployment.
-              </p>
+              <div className="ft_block">
+                <div className="ftb_image">
+                  <img src={featuresIcons_1} alt="" />
+                </div>
+                <p>
+                  In the first four months of 2022 alone, the value of funds
+                  stolen via smart contract hacks already exceeds the total for
+                  the year 2021.{" "}
+                </p>
+              </div>
+              <div className="ft_block">
+                <div className="ftb_image">
+                  <img src={featuresIcons_2} alt="" />
+                </div>
+                <p>
+                  Despite the widely prevalent belief, a smart contract is not
+                  secure by nature. As a piece of code, it is as prone to bugs and
+                  flaws as any program.
+                </p>
+              </div>
+              <div className="ft_block">
+                <div className="ftb_image">
+                  <img src={featuresIcons_3} alt="" />
+                </div>
+                <p>
+                  Any contract intended to receive funds should be audited before
+                  deployment.
+                </p>
+              </div>
             </div>
           </div>
           <div className="infoSection">

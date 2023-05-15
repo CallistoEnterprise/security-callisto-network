@@ -237,6 +237,7 @@ body{
     color: white;
     border: solid 2px #298C96;
     padding: 6px 18px;
+    white-space: nowrap;
 }
 
 .tableBtn:hover{
@@ -451,7 +452,7 @@ body{
     gap: 42px;
     justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 
 .youtubeVideo{
@@ -584,6 +585,7 @@ body{
     margin-bottom: 78px;
     font-size: 45px;
     font-weight: 700;
+    line-height: 50px;
 }
 
 .projectsIcons{
@@ -672,9 +674,35 @@ body{
     height: 3px;
 }
 
+.ftb_image{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.tableProjFlex{
+    display: flex;
+    width: max-content;
+    align-items: center;
+}
+
+@media screen and (min-width: 1440px){
+    .ftb_image{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1140px){
     .statsSection{
         grid-template-columns: 1fr;
+    }
+    .featuresIcons{
+        display: none;
+    }
+    .ftb_image{
+        display: block;
+    }
+    .featuresText{
+        flex-wrap: wrap;
     }
 }
 
@@ -701,6 +729,18 @@ body{
     .banner_tablet{
         display: flex;
     }
+    .aboutHeroTitle,
+    .hero2ndTitle {
+        line-height: 50px;
+    }
+    .herotitleAbout{
+        font-size: 18px;
+        text-align: center;
+        padding: 18px;
+    }
+    .sQBQuestion{
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 450px){
@@ -712,9 +752,13 @@ body{
     }
     .menuSection{
         display: block;
+        margin-bottom: 25px;
     }
     .listCenter{
         display: none;
+    }
+    .heroBtns{
+        flex-wrap: wrap;
     }
 }
 

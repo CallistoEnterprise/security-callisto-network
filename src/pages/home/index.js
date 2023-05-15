@@ -314,23 +314,26 @@ const Home = () => {
                   <tr className="tableRow" key={data.id}>
                     <td className="tablePadLeft">{data.id}</td>
                     <td className="tableProName">
-                      {data.project_icon === "" ? (
-                        <img
-                          src={generalIcon}
-                          alt="Project Icon"
-                          className="tableProjIcon"
-                          width="45px"
-                        />
-                      ) : (
-                        <img
-                          src={data.project_icon}
-                          alt="Project Icon"
-                          className="tableProjIcon"
-                          width="45px"
-                        />
-                      )}
-                      {data.project_name}
+                      <div className="tableProjFlex">
+                        {data.project_icon === "" ? (
+                          <img
+                            src={generalIcon}
+                            alt="Project Icon"
+                            className="tableProjIcon"
+                            width="45px"
+                          />
+                        ) : (
+                          <img
+                            src={data.project_icon}
+                            alt="Project Icon"
+                            className="tableProjIcon"
+                            width="45px"
+                          />
+                        )}
+                        <span className="tableProjName">{data.project_name}</span>
+                      </div>
                     </td>
+                    
                     <td>{data.market_cap}</td>
                     <td>{data.audit_release}</td>
                     <td>
