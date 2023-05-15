@@ -128,7 +128,7 @@ const Home = () => {
             <div className="heroCloIcon">
               <img src={cloIcon} alt="Callisto Security" />
             </div>
-            <div className="herotitle">
+            <div className="herotitleList">
               Trust the Blockchain &amp; Audit Your Smart Contracts
             </div>
             <div className="heroButtons">

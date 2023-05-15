@@ -468,7 +468,7 @@ const About = () => {
               </a>
             </div>
             <div className="projectsTitle">
-              Callisto Network: Proven Audit Expertise
+              A Proven Audit Expertise
             </div>
             <div className="projectsStats">
               <div className="projectStat">
