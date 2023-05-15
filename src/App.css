@@ -527,6 +527,7 @@ body{
     text-align: center;
     font-size: 45px;
     font-weight: 700;
+    line-height: 50px;
 }
 
 .infoP{
@@ -551,6 +552,7 @@ body{
     font-size: 45px;
     font-weight: 700;
     text-align: center;
+    line-height: 50px;
 }
 
 .serviceIcon{
@@ -719,6 +721,9 @@ body{
     .projectsStats{
         flex-wrap: wrap;
         row-gap: 35px;
+    }
+    .ServicesAll{
+        padding: 0;
     }
 }
 
