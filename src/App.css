@@ -62,7 +62,7 @@ body{
 }
 
 .listLeft li{
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -372,9 +372,9 @@ body{
 
 .aboutHeroP{
     margin-bottom: 70px;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 26px;
     text-align: center;
     padding: 0 30px;
     max-width: 1210px;
@@ -475,9 +475,9 @@ body{
 }
 
 .aQBText{
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 26px;
 }
 
 .aQBRight{
