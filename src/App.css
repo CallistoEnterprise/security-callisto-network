@@ -91,7 +91,7 @@ body{
 }
 
 .hrLeft hr, .hrRight hr{
-    border: 2px solid #298C96;
+    border: 1.5px solid #298C96;
 }
 
 .hrTitle{
@@ -123,7 +123,7 @@ body{
 .herotitleList{
     font-size: 18px;
     padding: 18px;
-    border: solid 2px #75d771;
+    border: solid 1.5px #75d771;
     position: relative;
     font-weight: 500;
 }
@@ -135,7 +135,7 @@ body{
     padding-left: 66px;
     padding-top: 18px;
     padding-bottom: 20px;
-    border: solid 1px #75d771;
+    border: solid 1.5px #75d771;
     position: relative;
     max-width: fit-content;
     margin: 0 auto;
@@ -675,7 +675,7 @@ body{
 .hr hr{
     color: #298C96;    ;
     background: #298C96;
-    height: 3px;
+    height: 1.5px;
 }
 
 .ftb_image{
