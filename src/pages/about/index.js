@@ -296,7 +296,7 @@ const About = () => {
               ></iframe>
             </div>
             <div className="infoTitle2nd">
-              Callisto Network Security Departement
+              Callisto Network Security Department
             </div>
             <div className="infoP">
               <p>
