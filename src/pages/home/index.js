@@ -43,7 +43,9 @@ const Home = () => {
         return;
     }
 
-    const coinData = coinObject.cryptocurrency.price.market_cap_by_total_supply;
+
+    // number.toLocaleString('en-US'); format with commas
+    const coinData = (coinObject.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US');;
     return coinData;
 };
 
