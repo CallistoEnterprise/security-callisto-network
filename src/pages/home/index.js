@@ -110,13 +110,13 @@ const Home = () => {
               totalValue += obj.cryptocurrency.price.market_cap_by_total_supply;
             }
             if (obj.symbol === "USDT") {
-              setUsdt(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply));
+              setUsdt(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US'));
             }
             if (obj.symbol === "SOY") {
-              setSoy(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply));
+              setSoy(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US'));
             }
             if (obj.symbol === "SHIB") {
-              setShib(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply));
+              setShib(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US'));
             }
           }
           // set the state
