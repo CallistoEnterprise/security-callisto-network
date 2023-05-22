@@ -31,21 +31,23 @@ const Home = () => {
   const [dataFromAPI, setDataFromAPI] = useState([]);
   const [dataLoadedAPI, setDataLoadedAPI] = useState(false);
 
+  // Total Fund state
+  const [totalFund, setTotalFund] = useState(0);
+
 
   const getMarketcap = (report_link) => {
     // TODO: replace reportUrl with just symbol in boath inputs and coinName
     const coinObject = dataFromAPI.find(obj => obj.reportUrl.includes(report_link));
-
     if (!coinObject || 
         !coinObject.cryptocurrency || 
         !coinObject.cryptocurrency.price || 
         !coinObject.cryptocurrency.price.market_cap_by_total_supply) {
         return;
     }
-
-
     // number.toLocaleString('en-US'); format with commas
-    const coinData = (coinObject.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US');;
+    const coinData = (coinObject.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US');
+
+    console.log("Data: ", coinData);
     return coinData;
 };
 
@@ -90,31 +92,38 @@ const Home = () => {
   const audit_performed = _.size(dataRev);
   const recently_completed = _.take(dataRev, 3);
 
-  // a function that call an API and get the data back
-  const getData = async () => {
-    const response = await fetch(
-      "https://api-data.absolutewallet.com/api/soy-finance/v1/audits/lists"
-    );
-    const data = await response.json();
-    setDataFromAPI(data);
-
-    // if data is loaded set state to DataLoaded to true
-    if (data) {
-      setDataLoadedAPI(true);
-    }
-
-    if (Array.isArray(data)) {
-      console.log('API data is an array:', data);
-      console.log(dataFromAPI.find(obj => obj.coinId === 3229));
-    } else {
-      console.error('API data is not an array:', data);
-    }
-    return data;
-  }
   useEffect(() => {
-    getData();
-    console.log(dataFromAPI);
-  }, [dataLoadedAPI]);
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://api-data.absolutewallet.com/api/soy-finance/v1/audits/lists"
+        );
+        const data = await response.json().then((data) => {
+          // data should be your array of objects
+          let totalValue = 0;
+          for (let obj of data) {
+            // sum the values you're interested in, here I'm assuming the property is called 'value'
+            if (obj.cryptocurrency !== null) {
+              totalValue += obj.cryptocurrency.price.market_cap_by_total_supply;
+            }
+          }
+          // set the state
+          const millions = (totalValue / 1000000).toFixed(2);
+          const formattedMillions = millions.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+          setTotalFund(formattedMillions);
+        })
+        // if data is loaded set state to DataLoaded to true
+        if (data) {
+          setDataFromAPI(data);
+          setDataLoadedAPI(true);
+        }
+      } catch (error) {
+          console.log(error);
+      }
+      console.log(dataFromAPI);
+    }
+    fetchData();
+  }, []);
   
   return (
     <div className="homePage">
@@ -219,15 +228,15 @@ const Home = () => {
                   <div className="listLeft">
                     <ul>
                       <li>Audit Performed</li>
-                      <li>Vulnerabilities Found</li>
                       <li>Smart Contract Hacked After Audit</li>
+                      <li>Total Funds Protected</li>
                     </ul>
                   </div>
                   <div className="listRight">
                     <ul>
                       <li>{audit_performed}</li>
-                      <li>2484+</li>
                       <li>0</li>
+                      <li>{totalFund} M</li>
                     </ul>
                   </div>
                 </div>
