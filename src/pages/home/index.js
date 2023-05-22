@@ -47,7 +47,6 @@ const Home = () => {
     // number.toLocaleString('en-US'); format with commas
     const coinData = (coinObject.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US');
 
-    console.log("Data: ", coinData);
     return coinData;
 };
 
@@ -73,8 +72,6 @@ const Home = () => {
   const handleFilter = (event) => {
     // Reading the value from the filter input
     let value = event.target.value.toLowerCase();
-    console.log("Value input");
-    console.log(value);
 
     let newData = dataRev.filter((o) =>
       o.project_name.toLowerCase().includes(value)
@@ -84,8 +81,6 @@ const Home = () => {
       setDataFiltered(dataRev);
     } else {
       setDataFiltered(newData);
-      console.log("Filtered Data");
-      console.log(newData);
     }
   };
 
@@ -99,6 +94,9 @@ const Home = () => {
           "https://api-data.absolutewallet.com/api/soy-finance/v1/audits/lists"
         );
         const data = await response.json().then((data) => {
+          // Data states
+          setDataFromAPI(data);
+          setDataLoadedAPI(true);
           // data should be your array of objects
           let totalValue = 0;
           for (let obj of data) {
@@ -112,15 +110,9 @@ const Home = () => {
           const formattedMillions = millions.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
           setTotalFund(formattedMillions);
         })
-        // if data is loaded set state to DataLoaded to true
-        if (data) {
-          setDataFromAPI(data);
-          setDataLoadedAPI(true);
-        }
       } catch (error) {
           console.log(error);
       }
-      console.log(dataFromAPI);
     }
     fetchData();
   }, []);
