@@ -27,6 +27,26 @@ const Home = () => {
   const [dataLoaded, setDataLoaded] = useState(false);
   const [dataFiltered, setDataFiltered] = useState([]);
 
+  // Data from the API
+  const [dataFromAPI, setDataFromAPI] = useState([]);
+  const [dataLoadedAPI, setDataLoadedAPI] = useState(false);
+
+
+  const getMarketcap = (report_link) => {
+    // TODO: replace reportUrl with just symbol in boath inputs and coinName
+    const coinObject = dataFromAPI.find(obj => obj.reportUrl.includes(report_link));
+
+    if (!coinObject || 
+        !coinObject.cryptocurrency || 
+        !coinObject.cryptocurrency.price || 
+        !coinObject.cryptocurrency.price.market_cap_by_total_supply) {
+        return;
+    }
+
+    const coinData = coinObject.cryptocurrency.price.market_cap_by_total_supply;
+    return coinData;
+};
+
   useEffect(() => {
     Papa.parse(
       "https://docs.google.com/spreadsheets/d/e/2PACX-1vQLD7wTy3m9LVtZBQfB4Z2i6fhsNpSd-cfXpiYolfTw7YT3M-nNgOS0cisaqc93uMEA82KD_irBsQ7h/pub?output=csv",
@@ -68,6 +88,32 @@ const Home = () => {
   const audit_performed = _.size(dataRev);
   const recently_completed = _.take(dataRev, 3);
 
+  // a function that call an API and get the data back
+  const getData = async () => {
+    const response = await fetch(
+      "https://api-data.absolutewallet.com/api/soy-finance/v1/audits/lists"
+    );
+    const data = await response.json();
+    setDataFromAPI(data);
+
+    // if data is loaded set state to DataLoaded to true
+    if (data) {
+      setDataLoadedAPI(true);
+    }
+
+    if (Array.isArray(data)) {
+      console.log('API data is an array:', data);
+      console.log(dataFromAPI.find(obj => obj.coinId === 3229));
+    } else {
+      console.error('API data is not an array:', data);
+    }
+    return data;
+  }
+  useEffect(() => {
+    getData();
+    console.log(dataFromAPI);
+  }, [dataLoadedAPI]);
+  
   return (
     <div className="homePage">
       <div className="topSection">
@@ -334,7 +380,14 @@ const Home = () => {
                       </div>
                     </td>
                     
-                    <td>{data.market_cap}</td>
+                    <td className="tableProMarket">{
+                      // check if dataFromAPI is not loaded
+                      dataLoadedAPI ? (
+                        getMarketcap(data.report_link)
+                      ):(
+                        <p>Loading...</p>
+                      )
+                    }</td>
                     <td>{data.audit_release}</td>
                     <td>
                       {data.risk_level === "Critical" ? (
