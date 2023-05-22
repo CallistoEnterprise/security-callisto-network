@@ -34,6 +34,11 @@ const Home = () => {
   // Total Fund state
   const [totalFund, setTotalFund] = useState(0);
 
+  // States for USDT, SOY ands SHIB values
+  const [usdt, setUsdt] = useState(0);
+  const [soy, setSoy] = useState(0);
+  const [shib, setShib] = useState(0);
+
 
   const getMarketcap = (report_link) => {
     // TODO: replace reportUrl with just symbol in boath inputs and coinName
@@ -47,7 +52,7 @@ const Home = () => {
     // number.toLocaleString('en-US'); format with commas
     const coinData = (coinObject.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US');
 
-    return coinData;
+    return "$" + coinData;
 };
 
   useEffect(() => {
@@ -103,6 +108,15 @@ const Home = () => {
             // sum the values you're interested in, here I'm assuming the property is called 'value'
             if (obj.cryptocurrency !== null) {
               totalValue += obj.cryptocurrency.price.market_cap_by_total_supply;
+            }
+            if (obj.symbol === "USDT") {
+              setUsdt(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply));
+            }
+            if (obj.symbol === "SOY") {
+              setSoy(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply));
+            }
+            if (obj.symbol === "SHIB") {
+              setShib(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply));
             }
           }
           // set the state
@@ -228,7 +242,7 @@ const Home = () => {
                     <ul>
                       <li>{audit_performed}</li>
                       <li>0</li>
-                      <li>{totalFund} M</li>
+                      <li>${totalFund} M</li>
                     </ul>
                   </div>
                 </div>
@@ -293,9 +307,9 @@ const Home = () => {
                   </div>
                   <div className="listRight">
                     <ul>
-                      <li>$65,848,116,823</li>
-                      <li>$1,597,553</li>
-                      <li>$6,169,192,014</li>
+                      <li>${usdt}</li>
+                      <li>${soy}</li>
+                      <li>${shib}</li>
                     </ul>
                   </div>
                 </div>
