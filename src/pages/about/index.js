@@ -163,7 +163,7 @@ const About = () => {
           </div>
           <div className="heroBtns">
             <a
-              href="https://github.com/EthereumCommonwealth/Auditing/issues/new"
+              href="https://github.com/CallistoSecurity/Smart-contract-auditing/issues/new"
               className="heroBtns_1"
             >
               Request an audit
