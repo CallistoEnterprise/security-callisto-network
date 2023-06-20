@@ -196,7 +196,7 @@ const Home = () => {
             </div>
             <div className="heroButtons">
               <a
-                href="https://github.com/EthereumCommonwealth/Auditing/issues/new"
+                href="https://github.com/CallistoSecurity/Smart-contract-auditing/issues/new"
                 className="greenBtnLarge"
                 target="_blank"
                 rel="noopener noreferrer"
