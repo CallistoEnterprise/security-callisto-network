@@ -109,7 +109,7 @@ const About = () => {
                 <img src={followTelegram} alt="Telegram" />
               </a>
               <a
-                href="https://twitter.com/Callisto_Audits"
+                href="https://twitter.com/CallistoSupport"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -169,8 +169,14 @@ const About = () => {
               Request an audit
             </a>
             <a
-              href="https://github.com/EthereumCommonwealth/Proposals/issues/2/"
+              href="https://audits.callisto.network/audited-projects"
               className="heroBtns_2"
+            >
+              Audited projects
+            </a>
+            <a
+              href="https://github.com/EthereumCommonwealth/Proposals/issues/2/"
+              className="heroBtns_3"
             >
               Become an auditor
             </a>

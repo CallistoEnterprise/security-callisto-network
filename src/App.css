@@ -381,7 +381,7 @@ body{
     margin: 0 auto;
 }
 
-.heroBtns_2{
+.heroBtns_3{
     text-transform: uppercase;
     text-decoration: none;
     color: white;
@@ -390,6 +390,16 @@ body{
     font-weight: 500;
     padding: 10px 34px;
     clip-path: polygon(92% 0, 100% 54%, 100% 100%, 0 100%, 0 0);
+}
+
+.heroBtns_2{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #2AB048;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 34px;
 }
 
 .heroBtns_1{
