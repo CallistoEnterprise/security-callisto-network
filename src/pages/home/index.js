@@ -170,7 +170,7 @@ const Home = () => {
                 <img src={followTelegram} alt="Telegram" />
               </a>
               <a
-                href="https://twitter.com/CallistoSupport"
+                href="https://twitter.com/CallistoAudits"
                 target="_blank"
                 rel="noopener noreferrer"
               >
