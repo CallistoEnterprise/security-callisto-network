@@ -109,7 +109,7 @@ const About = () => {
                 <img src={followTelegram} alt="Telegram" />
               </a>
               <a
-                href="https://twitter.com/Callisto_Audits"
+                href="https://twitter.com/CallistoAudits"
                 target="_blank"
                 rel="noopener noreferrer"
               >
