@@ -108,15 +108,15 @@ const Home = () => {
             // sum the values you're interested in, here I'm assuming the property is called 'value'
             if (obj.cryptocurrency !== null) {
               totalValue += obj.cryptocurrency.price.market_cap_by_total_supply;
-            }
-            if (obj.symbol === "USDT") {
-              setUsdt(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US'));
-            }
-            if (obj.symbol === "SOY") {
-              setSoy(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US'));
-            }
-            if (obj.symbol === "SHIB") {
-              setShib(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US'));
+              if (obj.symbol === "USDT") {
+                setUsdt(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US'));
+              }
+              if (obj.symbol === "SOY") {
+                setSoy(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US'));
+              }
+              if (obj.symbol === "SHIB") {
+                setShib(Math.trunc(obj.cryptocurrency.price.market_cap_by_total_supply).toLocaleString('en-US'));
+              }
             }
           }
           // set the state
