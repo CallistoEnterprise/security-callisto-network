@@ -96,7 +96,7 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://api-data.absolutewallet.com/api/soy-finance/v1/audits/lists"
+          "https://api.callisto.network/api/v1/audits/lists"
         );
         const data = await response.json().then((data) => {
           // Data states
